@@ -1,0 +1,10 @@
+{
+  "projects": [
+    { "name": "Contributor Hub", "owner": "Maya Chen", "status": "In progress", "recentActivity": "New onboarding flow approved yesterday", "priority": "High", "summary": "A single front door for guides, patterns, and team rituals.", "activityOrder": 6 },
+    { "name": "Atlas migration", "owner": "Jon Bell", "status": "At risk", "recentActivity": "Dependency review needs a decision this week", "priority": "High", "summary": "Moving the reporting pipeline to a faster, simpler foundation.", "activityOrder": 5 },
+    { "name": "Design system refresh", "owner": "Amina Okafor", "status": "In progress", "recentActivity": "Button and form tokens are ready for review", "priority": "Medium", "summary": "Making everyday interfaces clearer, quicker, and more consistent.", "activityOrder": 4 },
+    { "name": "Quarterly demo day", "owner": "Leo Martins", "status": "Planning", "recentActivity": "Save-the-date sent to all contributors", "priority": "Medium", "summary": "A short, generous moment to share progress and learnings.", "activityOrder": 3 },
+    { "name": "Accessibility audit", "owner": "Priya Shah", "status": "Complete", "recentActivity": "Findings published with owners attached", "priority": "Low", "summary": "Closing the gap between a usable product and an equitable one.", "activityOrder": 2 },
+    { "name": "Member insights", "owner": "Rosa Kim", "status": "Planning", "recentActivity": "Interview themes are being grouped", "priority": "Low", "summary": "Turning member conversations into sharper product decisions.", "activityOrder": 1 }
+  ]
+}

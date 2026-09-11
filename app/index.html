@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A focused view of team projects, momentum, and risks.">
+    <title>Project Pulse</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Project Pulse home"><span class="brand-mark" aria-hidden="true">P</span><span>Project Pulse</span></a>
+        <span class="updated-label"><span class="live-dot" aria-hidden="true"></span> Team workspace</span>
+      </header>
+      <main class="dashboard">
+        <section class="intro" aria-labelledby="page-title">
+          <div><p class="eyebrow">Mona's team / overview</p><h1 id="page-title">Keep the work moving.</h1><p class="intro-copy">A calm, current view of what is shipping, what needs attention, and who is leading the way.</p></div>
+          <div class="date-chip" aria-label="Current reporting period"><span class="date-chip-label">Reporting period</span><strong>September 2026</strong></div>
+        </section>
+        <section class="metric-grid" aria-label="Project summary" id="metrics">
+          <article class="metric-card metric-card-primary"><span class="metric-label">Total projects</span><strong class="metric-value" data-metric="total">--</strong><span class="metric-note">Across the team</span></article>
+          <article class="metric-card"><span class="metric-label">In motion</span><strong class="metric-value" data-metric="active">--</strong><span class="metric-note">Active right now</span></article>
+          <article class="metric-card"><span class="metric-label">Needs attention</span><strong class="metric-value" data-metric="attention">--</strong><span class="metric-note">High priority items</span></article>
+          <article class="metric-card"><span class="metric-label">Owners involved</span><strong class="metric-value" data-metric="owners">--</strong><span class="metric-note">Contributors leading work</span></article>
+        </section>
+        <section class="projects-section" aria-labelledby="projects-title">
+          <div class="section-heading"><div><p class="eyebrow">The portfolio</p><h2 id="projects-title">Projects at a glance</h2></div><span class="result-count" id="result-count" aria-live="polite"></span></div>
+          <div class="toolbar" aria-label="Project controls">
+            <label class="search-field"><span class="sr-only">Search projects</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="search-input" type="search" placeholder="Search projects or owners" autocomplete="off"></label>
+            <div class="control-group"><label class="select-field"><span class="sr-only">Filter by status</span><select id="status-filter"><option value="all">All statuses</option><option value="In progress">In progress</option><option value="Planning">Planning</option><option value="At risk">At risk</option><option value="Complete">Complete</option></select></label><label class="select-field"><span class="sr-only">Sort projects</span><select id="sort-select"><option value="priority">Sort: priority</option><option value="recent">Sort: recent activity</option><option value="name">Sort: name</option></select></label></div>
+          </div>
+          <div class="state-panel" id="loading-state" role="status">Loading project pulse...</div>
+          <div class="state-panel state-panel-error" id="error-state" role="alert" hidden><strong>We couldn't load the projects.</strong><button class="text-button" id="retry-button" type="button">Try again</button></div>
+          <div class="state-panel" id="empty-state" hidden><strong>No projects match those filters.</strong><span>Try a different search or reset the filters.</span><button class="text-button" id="clear-button" type="button">Clear filters</button></div>
+          <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        </section>
+      </main>
+      <footer class="footer">Project Pulse <span aria-hidden="true">/</span> built for better team visibility</footer>
+    </div>
+  </body>
+</html>
